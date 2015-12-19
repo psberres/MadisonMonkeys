@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadisonMonkeys.Views.MonkeyPage"
+             Title="{Binding Name}">
+  
+    <ScrollView>
+      
+        <StackLayout Padding="20" Spacing="10">
+          
+            <Image Source="{Binding Image}"/>
+          
+            <Label Text="{Binding Location}"/>
+          
+            <Label x:Name="Label1" Text="{Binding Details}"/>      
+          
+            <Button Text="Tap for description" Clicked="OnButtonClicked"/> 
+        </StackLayout>      
+      
+    </ScrollView>
+  
+  
+</ContentPage>
